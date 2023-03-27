@@ -6,7 +6,7 @@ public class TypeCheck
 {
     public static void typecheckProgram(Program program) throws Exception
     {
-        System.out.println("typechecker is not implemented!");
-        return;
+        AProgram aProgram = (AProgram) program;
+        Visitor visitor = new Visitor(aProgram);
     }
 }
